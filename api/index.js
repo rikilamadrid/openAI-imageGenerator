@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 // Set static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/openai', require('./routes/openaiRoutes'));
+app.use('/openai', require('../routes/openaiRoutes'));
 
 app.listen(port, () => {
   console.log(`Listening to port: ${port}.`);
