@@ -17,3 +17,5 @@ app.use('/openai', require('./routes/openaiRoutes'));
 app.listen(port, () => {
   console.log(`Listening to port: ${port}.`);
 });
+
+module.exports = app;
